@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Couleurs - Défauts d’accessibilité : Impacts sur les utilisateurs</title>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+  </head>
+
+  <body>
+  	<div class="main-header">
+
+  		<div class="inside">
+  			<ul class="skip-links">
+  				<li><a href="#main">contenu</a></li>
+  				<li><a href="#navigation">navigation</a></li>
+  			</ul>
+
+  			<header role="banner" class="header  clear" id="banner">
+  				<h1 class="title">Défauts d’accessibilité&nbsp;: Impacts sur les utilisateurs</h1>
+  			</header>
+
+			<nav role="navigation" class="gp-sommaire" id="navigation" aria-label="Sommaire du guide">
+				<button id="btnSommaire" aria-expanded="false">Sommaire</button>
+				<ul class="sommaire is-hidden" id="sommaireToggle">
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="personnes.html">Personnes handicapées et navigation sur le web</a>
+						<ul>
+							<li><a href="handicap-visuel.html">Handicap visuel</a></li>
+							<li><a href="handicap-auditif.html">Handicap auditif</a></li>
+							<li><a href="handicap-moteur.html">Handicap moteur</a></li>
+							<li><a href="handicap-mental.html">Handicap mental</a></li>
+						</ul>
+					</li>
+					<li><a href="rgaa.html">Problématiques prises en charge par les critères du RGAA pour les utilisateurs en situation de handicap</a>
+						<ul>
+							<li><a href="images.html">Images</a></li>
+							<li><a href="cadres.html">Cadres</a></li>
+							<li><a href="couleurs.html">Couleurs</a></li>
+							<li><a href="multimedia.html">Multimédia</a></li>
+							<li><a href="tableaux.html">Tableaux</a></li>
+							<li><a href="liens.html">Liens</a></li>
+							<li><a href="scripts.html">Scripts</a></li>
+							<li><a href="obligatoires.html">Éléments obligatoires</a></li>
+							<li><a href="structuration.html">Structuration</a></li>
+							<li><a href="presentation.html">Présentation</a></li>
+							<li><a href="formulaires.html">Formulaires</a></li>
+							<li><a href="navigation.html">Navigation</a></li>
+							<li><a href="consultation.html">Consultation</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+  			<div class="github-link">
+  				<p><a title="Contribuer / Télécharger sur Github" href="https://github.com/DISIC/guide-impacts_utilisateurs/">Contribuer / Télécharger</a></p>
+  				</div>
+  			</div>
+  		</div>
+
+	<div id="wrapper">
+
+	<nav role="navigation" class="internav clear">
+		<ul>
+			<li><a class="prev" href="cadres.html"><span aria-hidden="true"> &laquo; </span> Cadres</a></li>
+			<li><a class="next" href="multimedia.html">Multimédia <span aria-hidden="true"> &raquo; </span></a></li>
+		</ul>
+	</nav>
+
+		<main id="main" role="main">
+			<h1 class="fiche-title">Couleurs</h1>
+			<article class="article">
+					<p>Les principaux utilisateurs impactés sont les aveugles et grands malvoyants et les déficients visuels qui ont des problèmes de perception des couleurs ou des contrastes.</p>
+					<p>Dans cette section&nbsp;:</p>
+					<ul>
+						<li><a href="#info-couleur">Alternatives pour l’information donnée par la couleur</a></li>
+						<li><a href="#lisibilite">Lisibilité des contenus</a></li>
+					</ul>
+			</article>
+
+			<article class="article">
+				<h2 id="info-couleur">Alternatives pour l’information donnée par la couleur</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-3-1">3.1</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-3-2">3.2</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles, déficients visuels.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>Dans certains cas, l'absence à une information donnée par la couleur a pour conséquence une perte d'information (indication de la page active par exemple), mais bien généralelent ce problème d’accessibilité rend les contenus ou les fonctionnalités inutilisables. Ces problèmes devraient être corrigés sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Si un aveugle ne peut pas du tout voir les couleurs, beaucoup d’utilisateurs n’ont qu’une vision partielle ou dégradée des couleurs. Cela peut concerner une seule couleur, plusieurs couleurs ou des combinaisons de couleurs particulières.</p>
+					<p>Le déficit de perception des couleurs est très répandu et ses conséquences peuvent être désastreuses pour la perception et la compréhension des contenus et des fonctionnalités.</p>
+					<p>Dans le cas d’une fonctionnalité, par exemple une fonctionnalité de sélection multiple dans une liste d’objets, si le statut sélectionné est uniquement indiqué par une couleur, ces utilisateurs se retrouveront dans l’incapacité d’utiliser la fonctionnalité.</p>
+					<p>Dans le cas où l’information donnée par la couleur fait partie d’une image, comme un graphique par exemple, c’est l’accès à l’information lui-même qui devient impossible.</p>
+					<p>Il n’existe pas de technologie d’assistance efficace pour traiter ces problèmes d’accessibilité.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="lisibilite">Lisibilité des contenus</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-3-3">3.3</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-3-4">3.4</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Déficients visuels.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>Si les problèmes de contrastes sont limités à quelques textes dans la page, on peut considérer que ce problème ne fait que compliquer la découverte des contenus. En revanche, la généralisation de ces problèmes à l’ensemble des contenus et la présence de problème de contraste dans des images texte peut constituer un véritable problème d’accès aux contenus.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>De manière similaire, et quelquefois combinée au problème de perception des couleurs, la dégradation de la lisibilité des contenus du fait de l’utilisation de contraste trop faible, touche un grand nombre d’utilisateurs dont la part augmente avec l’âge.</p>
+					<p>Il existe de nombreux outils dont certains sont incorporés aux options d’accessibilité des systèmes d’exploitation permettant d’augmenter les contrastes, mais ces outils sont très dépendant de la nature des informations traitées. Par exemple, s’ils sont efficaces sur du texte, ils ne seront d’aucune utilité sur du texte ou des boutons en images ou du texte incrusté dans des vidéos par exemple.</p>
+					<p>En dernier recours les utilisateurs peuvent désactiver la couche CSS avec deux inconvénients majeurs&nbsp;: cela ne règlera pas le problème des textes en images et l’expérience utilisateur, du fait de la perte de la mise en page, peut être simplement désastreuse.</p>
+					<p>Dans le cas de problèmes de contrastes sur des images textes, l’utilisateur impacté peut tenter de désactiver les images du site pour récupérer l’alternative des images en question.</p>
+					<p>Sur des sites très simples, cette stratégie de consultation peut être efficace, mais elle devient vite totalement inefficace sur des sites plus complexes.</p>
+					<p>Bien que de niveau AA cette problématique devrait être considérée, car elle peut avoir des conséquences particulièrement importantes sur la lisibilité des contenus.</p>
+				</div>
+			</article>
+
+			</main>
+
+<footer id="footer" role="contentinfo" class="clear">
+		<h2>Licence d'utilisation</h2>
+		<p class="logo-smgap"><a href="http://references.modernisation.gouv.fr/"><img src="img/modernisation-logo.jpg" alt="Secrétariat général pour le modernisation de l'action publique"></a></p>
+		<p>Ce document est la propri&#233;t&#233; du Secr&#233;tariat g&#233;n&#233;ral &#224; la modernisation de l'action publique fran&#231;ais (SGMAP). Il est plac&#233; sous la <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ult&#233;rieure</a>, &#233;quivalente &#224; une licence <i lang="en">Creative Commons BY</i>. Pour indiquer la paternit&#233;, ajouter un lien vers la version originale du document disponible sur le <a href="https://github.com/DISIC">compte <span lang="en">GitHub</span> de la DInSIC</a>.</p>
+
+	</footer>
+
+							</div>
+
+							<script src="js/script.js"></script>
+
+						</body>
+						</html>

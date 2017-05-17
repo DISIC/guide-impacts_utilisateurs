@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Tableaux - Défauts d’accessibilité : Impacts sur les utilisateurs</title>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+  </head>
+
+  <body>
+  	<div class="main-header">
+
+  		<div class="inside">
+  			<ul class="skip-links">
+  				<li><a href="#main">contenu</a></li>
+  				<li><a href="#navigation">navigation</a></li>
+  			</ul>
+
+  			<header role="banner" class="header  clear" id="banner">
+  				<h1 class="title">Défauts d’accessibilité&nbsp;: Impacts sur les utilisateurs</h1>
+  			</header>
+
+			<nav role="navigation" class="gp-sommaire" id="navigation" aria-label="Sommaire du guide">
+				<button id="btnSommaire" aria-expanded="false">Sommaire</button>
+				<ul class="sommaire is-hidden" id="sommaireToggle">
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="personnes.html">Personnes handicapées et navigation sur le web</a>
+						<ul>
+							<li><a href="handicap-visuel.html">Handicap visuel</a></li>
+							<li><a href="handicap-auditif.html">Handicap auditif</a></li>
+							<li><a href="handicap-moteur.html">Handicap moteur</a></li>
+							<li><a href="handicap-mental.html">Handicap mental</a></li>
+						</ul>
+					</li>
+					<li><a href="rgaa.html">Problématiques prises en charge par les critères du RGAA pour les utilisateurs en situation de handicap</a>
+						<ul>
+							<li><a href="images.html">Images</a></li>
+							<li><a href="cadres.html">Cadres</a></li>
+							<li><a href="couleurs.html">Couleurs</a></li>
+							<li><a href="multimedia.html">Multimédia</a></li>
+							<li><a href="tableaux.html">Tableaux</a></li>
+							<li><a href="liens.html">Liens</a></li>
+							<li><a href="scripts.html">Scripts</a></li>
+							<li><a href="obligatoires.html">Éléments obligatoires</a></li>
+							<li><a href="structuration.html">Structuration</a></li>
+							<li><a href="presentation.html">Présentation</a></li>
+							<li><a href="formulaires.html">Formulaires</a></li>
+							<li><a href="navigation.html">Navigation</a></li>
+							<li><a href="consultation.html">Consultation</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+  			<div class="github-link">
+  				<p><a title="Contribuer / Télécharger sur Github" href="https://github.com/DISIC/guide-impacts_utilisateurs/">Contribuer / Télécharger</a></p>
+  				</div>
+  			</div>
+  		</div>
+
+	<div id="wrapper">
+
+	<nav role="navigation" class="internav clear">
+		<ul>
+			<li><a class="prev" href="multimedia.html"><span aria-hidden="true"> &laquo; </span> Multimédia</a></li>
+			<li><a class="next" href="liens.html">Liens <span aria-hidden="true"> &raquo; </span></a></li>
+		</ul>
+	</nav>
+
+		<main id="main" role="main">
+			<h1 class="fiche-title">Tableaux</h1>
+			<article class="article">
+					<p>Les principaux utilisateurs impactés sont les aveugles et grands malvoyants, certains déficients visuels et les handicapés mentaux et cognitifs.</p>
+					<p>Dans cette section&nbsp;:</p>
+					<ul>
+						<li><a href="#resumes">Résumé des tableaux de données complexes</a></li>
+						<li><a href="#titres">Titrage des tableaux de données</a></li>
+						<li><a href="#entetes">Identification des en-têtes et liaisons des cellules d’en-têtes et de données</a></li>
+						<li><a href="#mise-en-forme">Linéarisation et identification des tableaux de mise en forme</a></li>
+					</ul>
+			</article>
+
+			<article class="article">
+				<h2 id="resumes">Résumé des tableaux de données complexes</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-1">5.1</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-2">5.2</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants, déficients visuels, handicapés mentaux et cognitifs.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>L’impact est très dépendant de la nature et de la complexité du tableau de données. Pour les tableaux particulièrement complexes cela peut s’apparenter à un véritable problème d’accès à l’information.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les aveugles et les grands malvoyants qui accèdent aux contenus par l’intermédiaire d’un lecteur d’écran, les déficients visuels qui utilisent une loupe d'écran ou encore les utilisateurs ayant un champ de vision réduit ou partiellement masqué, ne peuvent pas percevoir l’organisation d’un tableau de données complexe.</p>
+					<p>Les handicapés mentaux et certains handicapés cognitifs peuvent ne pas être en capacité de comprendre une structure de tableau trop complexe possédant par exemple des cellules d’en-tête fusionnées ou des zones de regroupement de données.</p>
+					<p>Dans tous les cas l’absence d’un résumé leur donnant accès à ce niveau d’information peut rendre particulièrement complexe la compréhension et l’utilisation des données du tableau.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="titres">Titrage des tableaux de données</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-4">5.4</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-5">5.5</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants.</p>
+					<h3 class="warning">Impact&nbsp;: Fort</h3>
+					<p>L’impact est variable essentiellement en fonction du volume de tableaux, néanmoins cela constitue toujours un problème très important.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les aveugles et grands malvoyants qui utilisent un lecteur d’écran bénéficient de fonctionnalités avancées de navigation dans le contenu. L’une d’elles propose de se déplacer par type d’élément ou d’afficher une liste des éléments de la page.</p>
+					<p>Dans ce contexte, plus particulièrement lorsque l’utilisateur affiche la liste des éléments de la page, l’absence de titrage lié aux tableaux de données ne permet plus l’identification du tableau.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="entetes">Identification des en-têtes et liaisons des cellules d’en-têtes et de données</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-6">5.6</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-7">5.7</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants.</p>
+					<h3 class="warning">Impact&nbsp;: Majeur</h3>
+					<p>Ce problème d’accessibilité devrait être systématiquement traité sans délai, il s’agit d’un problème d’accès à l’information sans solution alternative.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les aveugles et grands malvoyants qui accèdent au contenu par l’intermédiaire d’un lecteur d’écran ou d’une loupe vocalisée et les déficients visuels dépourvus de vision périphérique ou centrale ne peuvent pas voir le tableau ou ne perçoivent qu’une partie limitée de l’écran. Ils rencontreront donc des difficultés importantes pour associer les en-têtes aux cellules de données.</p>
+					<p>Ils seront dans l’impossibilité de comprendre et d’utiliser le tableau en l’absence des liaisons programmatiques entre les cellules d’en-tête et de données.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="mise-en-forme">Linéarisation et identification des tableaux de mise en forme</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-3">5.3</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-5-8">5.8</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants.</p>
+					<h3 class="warning">Impact&nbsp;: Majeur</h3>
+					<p>Ce problème d’accessibilité est particulièrement grave car les incompréhensions qui sont éventuellement générées peuvent ne pas être détectées par ces utilisateurs et constituer des contresens. Il devrait être traité sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les aveugles et grands malvoyants qui accèdent au contenu par l’intermédiaire d’un lecteur d’écran parcourent le contenu de manière séquentielle. En l’absence d’un ordre logique dans la répartition du contenu dans les cellules d’un tableau de mise en forme ces utilisateurs ne seront pas en capacité de comprendre les contenus.</p>
+				</div>
+			</article>
+
+
+
+			</main>
+
+<footer id="footer" role="contentinfo" class="clear">
+		<h2>Licence d'utilisation</h2>
+		<p class="logo-smgap"><a href="http://references.modernisation.gouv.fr/"><img src="img/modernisation-logo.jpg" alt="Secrétariat général pour le modernisation de l'action publique"></a></p>
+		<p>Ce document est la propri&#233;t&#233; du Secr&#233;tariat g&#233;n&#233;ral &#224; la modernisation de l'action publique fran&#231;ais (SGMAP). Il est plac&#233; sous la <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ult&#233;rieure</a>, &#233;quivalente &#224; une licence <i lang="en">Creative Commons BY</i>. Pour indiquer la paternit&#233;, ajouter un lien vers la version originale du document disponible sur le <a href="https://github.com/DISIC">compte <span lang="en">GitHub</span> de la DInSIC</a>.</p>
+
+	</footer>
+
+							</div>
+
+							<script src="js/script.js"></script>
+
+						</body>
+						</html>

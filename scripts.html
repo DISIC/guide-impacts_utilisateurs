@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Scripts - Défauts d’accessibilité : Impacts sur les utilisateurs</title>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+  </head>
+
+  <body>
+  	<div class="main-header">
+
+  		<div class="inside">
+  			<ul class="skip-links">
+  				<li><a href="#main">contenu</a></li>
+  				<li><a href="#navigation">navigation</a></li>
+  			</ul>
+
+  			<header role="banner" class="header  clear" id="banner">
+  				<h1 class="title">Défauts d’accessibilité&nbsp;: Impacts sur les utilisateurs</h1>
+  			</header>
+
+			<nav role="navigation" class="gp-sommaire" id="navigation" aria-label="Sommaire du guide">
+				<button id="btnSommaire" aria-expanded="false">Sommaire</button>
+				<ul class="sommaire is-hidden" id="sommaireToggle">
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="personnes.html">Personnes handicapées et navigation sur le web</a>
+						<ul>
+							<li><a href="handicap-visuel.html">Handicap visuel</a></li>
+							<li><a href="handicap-auditif.html">Handicap auditif</a></li>
+							<li><a href="handicap-moteur.html">Handicap moteur</a></li>
+							<li><a href="handicap-mental.html">Handicap mental</a></li>
+						</ul>
+					</li>
+					<li><a href="rgaa.html">Problématiques prises en charge par les critères du RGAA pour les utilisateurs en situation de handicap</a>
+						<ul>
+							<li><a href="images.html">Images</a></li>
+							<li><a href="cadres.html">Cadres</a></li>
+							<li><a href="couleurs.html">Couleurs</a></li>
+							<li><a href="multimedia.html">Multimédia</a></li>
+							<li><a href="tableaux.html">Tableaux</a></li>
+							<li><a href="liens.html">Liens</a></li>
+							<li><a href="scripts.html">Scripts</a></li>
+							<li><a href="obligatoires.html">Éléments obligatoires</a></li>
+							<li><a href="structuration.html">Structuration</a></li>
+							<li><a href="presentation.html">Présentation</a></li>
+							<li><a href="formulaires.html">Formulaires</a></li>
+							<li><a href="navigation.html">Navigation</a></li>
+							<li><a href="consultation.html">Consultation</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+  			<div class="github-link">
+  				<p><a title="Contribuer / Télécharger sur Github" href="https://github.com/DISIC/guide-impacts_utilisateurs/">Contribuer / Télécharger</a></p>
+  				</div>
+  			</div>
+  		</div>
+
+	<div id="wrapper">
+
+	<nav role="navigation" class="internav clear">
+		<ul>
+			<li><a class="prev" href="liens.html"><span aria-hidden="true"> &laquo; </span> Liens</a></li>
+			<li><a class="next" href="obligatoires.html">Éléments obligatoires <span aria-hidden="true"> &raquo; </span></a></li>
+		</ul>
+	</nav>
+
+		<main id="main" role="main">
+			<h1 class="fiche-title">Scripts</h1>
+			<article class="article">
+					<p>Les utilisateurs principalement impactés sont les aveugles, grands malvoyants et les handicapés moteurs, certains types de déficiences visuelles sont également impactés.</p>
+					<p>Dans cette section&nbsp;:</p>
+					<ul>
+						<li><a href="#compat">Compatibilité des scripts avec l’accessibilité</a></li>
+						<li><a href="#contexte">Changement de contexte initié par un script et alertes non sollicitées</a></li>
+					</ul>
+			</article>
+
+			<article class="article">
+				<h2 id="compat">Compatibilité des scripts avec l’accessibilité</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-7-1">7.1</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-7-2">7.2</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-7-3">7.3</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles, grands malvoyants, handicapés moteurs.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>L’accessibilité des composants riches développés avec JavaScript et au-delà, toutes les fonctionnalités qui dépendent de JavaScript, est toujours un problème majeur dans les contenus web qui en dépendent fortement. Ces problèmes ne devraient jamais être ignorés et devraient être traités sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Cette problématique concerne plus particulièrement les composants riches développés avec JavaScript comme un calendrier de saisie, un système d’onglets, une fenêtre modale. Ces composants sont fournis par les développeurs eux-mêmes, ainsi leur accessibilité est totalement dépendante de la présence de propriétés spécifiques et de l’utilisation de modèle de comportement au clavier fournis par les modèles de conception liés à l’API ARIA.</p>
+					<p>L’absence de ces propriétés et des comportements au clavier va rendre ces composants pratiquement inutilisables.</p>
+					<p>Les aveugles et grands malvoyants utilisant un lecteur d’écran pour interagir avec ces composants ne disposeront pas des informations leur permettant de comprendre de quel type de composant il s’agit et comment il s’utilise.</p>
+					<p>Les handicapés moteurs ne pourront que très difficilement utiliser ses composants qui peuvent nécessiter des interactions riches au clavier, par exemple un <span lang="en">slider</span> doit pouvoir se piloter avec les flèches de direction.</p>
+					<p>Enfin les déficients visuels qui n’ont qu’une vue partielle de la page rencontreront des difficultés dans certaines situations lorsque le focus est déplacé.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="contexte">Changement de contexte initié par un script et alertes non sollicitées</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-7-4">7.4</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-7-5">7.5</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles, déficients visuels, handicapés mentaux.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>L’impact est très dépendant de la nature et du volume des changements de contextes dans une page. Dans le cas de modifications de formulaires en cours de saisie cela peut devenir un problème majeur pour les handicapés mentaux notamment qui devraient être traités sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les variations de contenus comme le fait de modifier, d’ajouter ou de supprimer des champs de formulaires en cours de saisie, de transporter le focus sur des éléments de page suite à une action ou l’irruption en cours de processus d’alerte non sollicitée peuvent désorienter durablement les utilisateurs.</p>
+					<p>Les aveugles et les grands malvoyants qui ne peuvent pas voir l’ensemble de la page peuvent ignorer les modifications ou ne pas être en capacité de les interpréter correctement s’ils n’en sont pas informés préalablement.</p>
+					<p>Les handicapés mentaux et cognitifs peuvent ne pas être en capacité de comprendre ces modifications s’ils n’en sont pas informés préalablement.</p>
+				</div>
+			</article>
+
+			</main>
+
+<footer id="footer" role="contentinfo" class="clear">
+		<h2>Licence d'utilisation</h2>
+		<p class="logo-smgap"><a href="http://references.modernisation.gouv.fr/"><img src="img/modernisation-logo.jpg" alt="Secrétariat général pour le modernisation de l'action publique"></a></p>
+		<p>Ce document est la propri&#233;t&#233; du Secr&#233;tariat g&#233;n&#233;ral &#224; la modernisation de l'action publique fran&#231;ais (SGMAP). Il est plac&#233; sous la <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ult&#233;rieure</a>, &#233;quivalente &#224; une licence <i lang="en">Creative Commons BY</i>. Pour indiquer la paternit&#233;, ajouter un lien vers la version originale du document disponible sur le <a href="https://github.com/DISIC">compte <span lang="en">GitHub</span> de la DInSIC</a>.</p>
+
+	</footer>
+
+							</div>
+
+							<script src="js/script.js"></script>
+
+						</body>
+						</html>

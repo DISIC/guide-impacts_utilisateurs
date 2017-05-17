@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Présentation de l’information - Défauts d’accessibilité : Impacts sur les utilisateurs</title>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+  </head>
+
+  <body>
+  	<div class="main-header">
+
+  		<div class="inside">
+  			<ul class="skip-links">
+  				<li><a href="#main">contenu</a></li>
+  				<li><a href="#navigation">navigation</a></li>
+  			</ul>
+
+  			<header role="banner" class="header  clear" id="banner">
+  				<h1 class="title">Défauts d’accessibilité&nbsp;: Impacts sur les utilisateurs</h1>
+  			</header>
+
+			<nav role="navigation" class="gp-sommaire" id="navigation" aria-label="Sommaire du guide">
+				<button id="btnSommaire" aria-expanded="false">Sommaire</button>
+				<ul class="sommaire is-hidden" id="sommaireToggle">
+					<li><a href="index.html">Introduction</a></li>
+					<li><a href="personnes.html">Personnes handicapées et navigation sur le web</a>
+						<ul>
+							<li><a href="handicap-visuel.html">Handicap visuel</a></li>
+							<li><a href="handicap-auditif.html">Handicap auditif</a></li>
+							<li><a href="handicap-moteur.html">Handicap moteur</a></li>
+							<li><a href="handicap-mental.html">Handicap mental</a></li>
+						</ul>
+					</li>
+					<li><a href="rgaa.html">Problématiques prises en charge par les critères du RGAA pour les utilisateurs en situation de handicap</a>
+						<ul>
+							<li><a href="images.html">Images</a></li>
+							<li><a href="cadres.html">Cadres</a></li>
+							<li><a href="couleurs.html">Couleurs</a></li>
+							<li><a href="multimedia.html">Multimédia</a></li>
+							<li><a href="tableaux.html">Tableaux</a></li>
+							<li><a href="liens.html">Liens</a></li>
+							<li><a href="scripts.html">Scripts</a></li>
+							<li><a href="obligatoires.html">Éléments obligatoires</a></li>
+							<li><a href="structuration.html">Structuration</a></li>
+							<li><a href="presentation.html">Présentation</a></li>
+							<li><a href="formulaires.html">Formulaires</a></li>
+							<li><a href="navigation.html">Navigation</a></li>
+							<li><a href="consultation.html">Consultation</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+  			<div class="github-link">
+  				<p><a title="Contribuer / Télécharger sur Github" href="https://github.com/DISIC/guide-impacts_utilisateurs/">Contribuer / Télécharger</a></p>
+  				</div>
+  			</div>
+  		</div>
+
+	<div id="wrapper">
+
+	<nav role="navigation" class="internav clear">
+		<ul>
+			<li><a class="prev" href="structuration.html"><span aria-hidden="true"> &laquo; </span> Structuration</a></li>
+			<li><a class="next" href="formulaires.html">Formulaires <span aria-hidden="true"> &raquo; </span></a></li>
+		</ul>
+	</nav>
+
+		<main id="main" role="main">
+			<h1 class="fiche-title">Présentation de l’information</h1>
+			<article class="article">
+					<p>Les utilisateurs principalement impactés sont les déficients visuels et certains handicapés cognitifs.</p>
+					<p>Dans cette section&nbsp;:</p>
+					<ul>
+						<li><a href="#styles">Affichage de la présentation à l’aide des feuilles de style</a></li>
+						<li><a href="#contenu">Présence de l’information dans le code et ordre du contenu</a></li>
+						<li><a href="#personnalisation">Personnalisation de l’affichage</a></li>
+						<li><a href="#visibilite-liens">Visibilité des liens par rapport au texte environnant</a></li>
+						<li><a href="#visibilite-focus">Visibilité du focus</a></li>
+						<li><a href="#textes-caches">Restitution des textes cachés par les technologies d’assistance</a></li>
+						<li><a href="#info-forme">Alternatives pour l’information donnée par la forme, taille et position</a></li>
+					</ul>
+			</article>
+
+			<article class="article">
+				<h2 id="styles">Affichage de la présentation à l’aide des feuilles de style</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-1">10.1</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Déficients visuels.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>L’impact est fortement dépendant du volume et de la nature des problèmes relevés.</p>
+					<p>Bien que ne constituant pas à proprement parler un problème d’accès à l’information, l’impact peut être majeur sur l’utilisateur et devrait être corrigé sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>La présence d’effets de présentation, jeu de couleur, police, dimension et position des éléments de contenus qui ne reposent pas intégralement sur l’utilisation de styles CSS peut rendre le contenu impossible à personnaliser et à adapter aux capacités des déficients visuels.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="contenu">Présence de l’information dans le code et ordre du contenu</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-2">10.2</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-3">10.3</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>Ces problèmes devraient être traités sans délai, ils impactent toujours fortement l’accès à l’information.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Des contenus informatifs insérés via CSS peuvent ne pas être restitués par les lecteurs d’écran ou les systèmes de loupes vocalisés.
+De même des incohérences dans l’ordre dans lequel le contenu se présente dans le code peuvent provoquer des incompréhensions pour les aveugles et grands malvoyants qui accèdent au contenu par l’intermédiaire d’un lecteur d’écran.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="personnalisation">Personnalisation de l’affichage</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-4">10.4</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-5">10.5</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-8">10.8</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-9">10.9</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-10">10.10</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-11">10.11</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-12">10.12</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Déficients visuels, handicapés cognitifs.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>Si le recours à des dispositifs logiciels d’agrandissement peut pallier en partie les difficultés rencontrées, certains d’entre eux peuvent être rendus inopérants faute d’une adaptation suffisante des contenus.</p>
+					<p>Bien que de niveau AAA, l’absence de dispositifs d’adaptation proposés par le site ou l’application est un problème majeur pour les dyslexiques qui devrait être traités sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les déficients visuels rencontreront une difficulté majeure à lire des contenus dont ils ne peuvent pas contrôler la taille des caractères et le jeu de couleurs qu’ils adaptent à leurs capacités de perception.</p>
+					<p>Certains handicapés cognitifs, comme ceux souffrant de trouble Dys, auront de très grandes difficultés à lire les contenus sans avoir recours à des dispositifs de personnalisation comme la suppression de la justification ou l’augmentation de l’interlignage par exemple.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="visibilite-liens">Visibilité des liens par rapport au texte environnant</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-6">10.6</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Déficients visuels, handicapés mentaux.</p>
+					<h3 class="warning">Impact&nbsp;: Fort</h3>
+					<p>Même si l’impact réel peut varier en fonction du volume de liens concernés, ce problème peut constituer une véritable barrière à l’accès à l’information.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les déficients visuels pourraient ignorer des liens, dont la nature ne serait pas évidente, si ces derniers ne sont pas visuellement discernables du reste du texte dans lequel ils sont insérés.</p>
+					<p>Dans une moindre mesure les handicapés mentaux pourraient également avoir des difficultés dans le même genre de situation.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="visibilite-focus">Visibilité du focus</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-7">10.7</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Handicapés moteurs.</p>
+					<h3 class="warning">Impact&nbsp;: Fort à majeur</h3>
+					<p>Bien qu’ils puissent s’aider de dispositifs logiciels ou des fonctionnalités de certains navigateurs permettant d’augmenter la visibilité du focus, ce problème, parce qu’il peut rendre la page simplement inutilisable, devrait être traité sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les handicapés moteurs qui naviguent au clavier peuvent rencontrer des difficultés considérables à l’utilisation du contenu s’ils ne sont pas en capacité de repérer où se situe l’indication visuelle du focus et ses déplacements.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="textes-caches">Restitution des textes cachés par les technologies d’assistance</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-13">10.13</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants.</p>
+					<h3 class="warning">Impact&nbsp;: Majeur</h3>
+					<p>Même si l’impact peut être modéré par le volume de contenus impactés ce problème devrait être traité sans délai, car il impactera toujours l’accès à l’information.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Les aveugles et grands malvoyants qui utilisent un lecteur d’écran ont un accès séquentiel à l’information. Si les contrôles sont situés après les contenus qu'ils permettent d'afficher ou masquer, et ne sont pas pris en charge par un motif de conception ARIA, ces utilisateurs rencontreront des difficultés majeures pour retrouver les contenus contrôlés ce qui peut aboutir à ce qu’ils les ignorent ou provoquer des incompréhensions graves.</p>
+				</div>
+			</article>
+
+			<article class="article">
+				<h2 id="info-forme">Alternatives pour l’information donnée par la forme, taille et position</h2>
+				<div class="col-1-2">
+					<h3>Critères</h3>
+					<ul>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-14">10.14</a></li>
+						<li><a href="http://references.modernisation.gouv.fr/referentiel/criteres.html#crit-10-15">10.15</a></li>
+					</ul>
+					<h3>Utilisateurs principalement impactés</h3>
+					<p>Aveugles et grands malvoyants.</p>
+					<h3 class="warning">Impact&nbsp;: Majeur</h3>
+					<p>Ces problèmes impactant directement l’accès à l’information devraient être traités sans délai.</p>
+				</div>
+				<div class="col-1-2">
+					<h3>Explication</h3>
+					<p>Comme pour les couleurs l’absence d’une alternative à une information donnée par la forme, la taille ou la position peut rendre un processus inutilisable ou un contenu incompréhensible pour les aveugles et les grands malvoyants.</p>
+				</div>
+			</article>
+
+			</main>
+
+<footer id="footer" role="contentinfo" class="clear">
+		<h2>Licence d'utilisation</h2>
+		<p class="logo-smgap"><a href="http://references.modernisation.gouv.fr/"><img src="img/modernisation-logo.jpg" alt="Secrétariat général pour le modernisation de l'action publique"></a></p>
+		<p>Ce document est la propri&#233;t&#233; du Secr&#233;tariat g&#233;n&#233;ral &#224; la modernisation de l'action publique fran&#231;ais (SGMAP). Il est plac&#233; sous la <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ult&#233;rieure</a>, &#233;quivalente &#224; une licence <i lang="en">Creative Commons BY</i>. Pour indiquer la paternit&#233;, ajouter un lien vers la version originale du document disponible sur le <a href="https://github.com/DISIC">compte <span lang="en">GitHub</span> de la DInSIC</a>.</p>
+
+	</footer>
+
+							</div>
+
+							<script src="js/script.js"></script>
+
+						</body>
+						</html>
